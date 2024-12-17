@@ -46,7 +46,7 @@ def generate_local_answer(full_prompt, max_length=2048):
         logging.info("开始生成答案...")
         start_time = time.time()
         response = client.chat.completions.create(
-            model=model_name,  # 建议使用"gpt-4"，如果不可用则回退到"gpt-3.5-turbo"
+            model=model_name,  
             messages=[
                 {"role": "system", "content": "你是一个能够提供角色扮演服务的语言模型。"},
                 {"role": "user", "content": full_prompt}
