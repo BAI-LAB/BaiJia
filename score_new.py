@@ -18,15 +18,14 @@ logging.basicConfig(
 
 
 client = OpenAI(
-    api_key='sk-VJNRYlFE142b1c4191fAT3BLbKFJ7c244329f6824E10A214',
-    base_url='https://cn2us02.opapi.win/v1'
+
 )
 
 # 定义输入和输出目录
-QA_BASE_DIR ='/home/kjz/CBDB/dataset/QA_jsons_nn'
-RESUME_DIR = '/home/kjz/CBDB/dataset/test_without_duihua'
-PROMPT_FILE = '../prompt_score.txt'  # 请确保此文件包含最新的评分提示
-OUTPUT_SCORE_DIR = '/home/kjz/CBDB/dataset/score'
+QA_BASE_DIR =''
+RESUME_DIR = ''
+PROMPT_FILE = 'prompt_score.txt'  # 请确保此文件包含最新的评分提示
+OUTPUT_SCORE_DIR = ''
 
 # 确保输出目录存在
 os.makedirs(OUTPUT_SCORE_DIR, exist_ok=True)
@@ -198,11 +197,8 @@ def process_folder(folder_name, folder_path, resume_data_cache):
 def main():
     model_folders = [f for f in os.listdir(QA_BASE_DIR) if os.path.isdir(os.path.join(QA_BASE_DIR, f))]
 
-    # 动态确定 max_workers，避免过多线程导致资源竞争
     max_workers = multiprocessing.cpu_count() * 2
     logging.info(f"使用的最大线程数: {max_workers}")
-
-    # 预先加载所有简历文件到缓存中，减少重复读取
     resume_files = [f for f in os.listdir(RESUME_DIR) if f.endswith('.json')]
     resume_data_cache = {}
     for resume_file in resume_files:
