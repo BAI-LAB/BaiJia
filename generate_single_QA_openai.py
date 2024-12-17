@@ -17,20 +17,20 @@ logging.basicConfig(
     format='%(asctime)s %(levelname)s:%(message)s'
 )
 
-model_name="TA/meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo"
+model_name=""
 # 定义输入和输出目录
-resume_dir = '/home/kjz/CBDB/dataset/test_with_duihua'
-questions_dir = '/home/kjz/CBDB/dataset/single_questions'
-output_dir = '/home/kjz/CBDB/dataset/QA_jsons/Llama-3.1-70B_full'
+resume_dir = ''
+questions_dir = ''
+output_dir = ''
 client = OpenAI(
-    api_key='sk-VJNRYlFE142b1c4191fAT3BLbKFJ7c244329f6824E10A214',
-    base_url='https://cn2us02.opapi.win/v1'
+    api_key='',
+    base_url=''
 )
 # 确保输出目录存在
 os.makedirs(output_dir, exist_ok=True)
 
 # 读取提示模板
-prompt_template_path = '../prompt_QA.txt'  # 请确保该文件存在并包含适当的提示
+prompt_template_path = 'prompt_QA.txt'  # 请确保该文件存在并包含适当的提示
 try:
     with open(prompt_template_path, 'r', encoding='utf-8') as f:
         prompt_template = f.read()
