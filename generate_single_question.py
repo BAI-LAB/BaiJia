@@ -12,12 +12,12 @@ logging.basicConfig(
 )
 
 client = OpenAI(
-    api_key='sk-VJNRYlFE142b1c4191fAT3BLbKFJ7c244329f6824E10A214',
-    base_url='https://cn2us02.opapi.win/v1'
+    api_key='',
+    base_url=''
 )
 # 定义输入和输出目录
-input_dir='/home/kjz/CBDB/dataset/test_without_duihua'
-output_dir = '/home/kjz/CBDB/dataset/single_questions'
+input_dir=''
+output_dir = ''
 
 # 确保输出目录存在
 os.makedirs(output_dir, exist_ok=True)
@@ -52,7 +52,7 @@ def generate_questions(agent_json, agent_name, aspects, num_questions_per_aspect
     try:
         # 调用OpenAI API生成问题
         response = client.chat.completions.create(
-            model="gpt-4o-mini",  # 建议使用"gpt-4"，如果不可用则回退到"gpt-3.5-turbo"
+            model="gpt-4o-mini",  
             messages=[
                 {"role": "system", "content": "你是一个专家，擅长根据提供的简历信息生成相关问题。"},
                 {"role": "user", "content": prompt}
