@@ -37,7 +37,7 @@ We provide six comprehensive dimensions to evaluate the role-playing performance
 
 ## Usage Instructions
 
-1. Use **Demo_Baijia** as the dataset for experimentation.
+1. Use **Demo_Baijia** as the dataset for SFT.
 2. Combine **Eval_Question** and **Eval_Resume** to evaluate the role-playing ability of your language models.
 3. Evaluate models based on the six key dimensions mentioned above.
 
