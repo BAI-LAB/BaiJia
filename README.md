@@ -13,8 +13,8 @@ BaiJia is a role-playing agent corpus focused on Chinese historical characters. 
 We provide six comprehensive dimensions to evaluate the role-playing performance of LLMs:
 
 1. **Character Consistency (CC)**  
-   - Alignment with character background and historical dynasty context.
-
+   - Alignment with character background.
+   - Alignment with historical dynasty context.
 2. **Dialogue Ability (DA)**  
    - Coherence and logical flow of dialogue.  
    - Interactivity in conversations.
