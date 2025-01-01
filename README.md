@@ -70,11 +70,3 @@ If you find this project useful, please consider citing our paper:
     archivePrefix={arXiv},
     primaryClass={cs.AI}
 }
-
-## Contribution
-
-We welcome issues, discussions, and pull requests. Your feedback is valuable to improve the BaiJia project.
-
----
-
-Thank you for your interest and support!
