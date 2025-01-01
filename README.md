@@ -57,6 +57,19 @@ These results demonstrate the improved ability of the BaiJia_Demo fine-tuned ada
 1. Use **Demo_Baijia** as the dataset for SFT.
 2. Combine **Eval_Question** and **Eval_Resume** to evaluate the role-playing ability of your language models.
 3. Evaluate models based on the six key dimensions mentioned above.
+## Citation
+
+If you find this project useful, please consider citing our paper:
+
+```bibtex
+@misc{bai2024baijia,
+    title={BaiJia: A Large Scale Role-Playing Agent Corpus of Chinese Historical Characters},
+    author={Ting Bai and Jiazheng Kang and Jiayang Fan},
+    year={2024},
+    eprint={2412.20024},
+    archivePrefix={arXiv},
+    primaryClass={cs.AI}
+}
 
 ## Contribution
 
