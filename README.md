@@ -63,7 +63,7 @@ If you find this project useful, please consider citing our paper:
 
 ```bibtex
 @misc{bai2024baijia,
-    title={BaiJia: A Large Scale Role-Playing Agent Corpus of Chinese Historical Characters},
+    title={BaiJia: A Large-Scale Role-Playing Agent Corpus of Chinese Historical Characters},
     author={Ting Bai and Jiazheng Kang and Jiayang Fan},
     year={2024},
     eprint={2412.20024},
