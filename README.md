@@ -4,7 +4,7 @@ BaiJia is a role-playing agent corpus focused on Chinese historical characters. 
 
 ## Project Structure
 
-- **Demo_Baijia**: A publicly available portion of the dataset for experimentation and evaluation.
+- **Baijia_Lite**: A publicly available portion of the dataset for experimentation and evaluation.
 - **Eval_Question**: A set of evaluation questions to assess the performance of LLMs.
 - **Eval_Resume**: A collection of character resumes used for role-playing evaluations.
 
@@ -31,17 +31,17 @@ We provide six comprehensive dimensions to evaluate the role-playing performance
    - Language style matching character identity and historical era.  
    - Alignment with the historical and cultural context of the era.
 
-## Fine-Tuning with BaiJia_Demo
+## Fine-Tuning with Baijia_Lite
 
 We used **Demo_Baijia** for supervised fine-tuning (SFT) and published the adapter model on Hugging Face. You can find the model at the following link:
 
-**[BaiJia_Demo Adapter on Hugging Face](https://huggingface.co/datasets/Jiazhengg/BaiJia_Demo/tree/main)**
+**[Baijia_Lite Adapter on Hugging Face](https://huggingface.co/datasets/Jiazhengg/BaiJia_Demo/tree/main)**
 
 ### Evaluation Results After Fine-Tuning
 
 After using Demo_Baijia data for SFT, the adapter's performance was evaluated based on the six key dimensions. The table below shows the scores of the base model (Qwen) and the fine-tuned model (BaiJia_Demo), along with the percentage improvement:
 
-| Dimension | Qwen Score | BaiJia_Demo Score | Improvement (%) |
+| Dimension | Qwen Score | Baijia_Lite Score | Improvement (%) |
 |-----------|------------|-------------------|-----------------|
 | **CC**    | 4.10       | 4.41              | **7.56%**       |
 | **DA**    | 4.20       | 4.30              | **2.38%**       |
@@ -54,7 +54,7 @@ These results demonstrate the improved ability of the BaiJia_Demo fine-tuned ada
 
 ## Usage Instructions
 
-1. Use **Demo_Baijia** as the dataset for SFT.
+1. Use **Baijia_Lite** as the dataset for SFT.
 2. Combine **Eval_Question** and **Eval_Resume** to evaluate the role-playing ability of your language models.
 3. Evaluate models based on the six key dimensions mentioned above.
 ## Citation
