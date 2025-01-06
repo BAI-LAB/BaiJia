@@ -59,11 +59,11 @@ These results demonstrate the improved ability of the Baijia_Lite fine-tuned ada
 3. Evaluate models based on the six key dimensions mentioned above.
 
 ## 访问百家AI智能体平台
+
 百家是首个专注于低资源历史人物的智能体大模型，目前包含 **2万个中国历史人物AI智能体**。该平台旨在通过AI技术为硅基人类打造情感饱满、记忆超凡的大脑，提供丰富的角色扮演与互动体验。
 您可以访问我们的平台：[百家AI智能体平台](https://baijia.online)（为注册用户开放 **1000个tokens**）。
 欢迎关注我们的微信公众号，了解更多项目动态及使用技巧：
 ![百家公众号二维码](百家公众号.jpg)
-通过平台，您可以体验到更多角色扮演场景、参与角色的互动，并借助百家提供的丰富历史人物数据集与智能体，提升您的语言模型的表现。
 ## Citation
 
 If you find this project useful, please consider citing our paper:
@@ -77,6 +77,3 @@ If you find this project useful, please consider citing our paper:
     archivePrefix={arXiv},
     primaryClass={cs.AI}
 }
-
-
-
