@@ -33,13 +33,13 @@ We provide six comprehensive dimensions to evaluate the role-playing performance
 
 ## Fine-Tuning with Baijia_Lite
 
-We used **Demo_Baijia** for supervised fine-tuning (SFT) and published the adapter model on Hugging Face. You can find the model at the following link:
+We used **Baijia_Lite** for supervised fine-tuning (SFT) and published the adapter model on Hugging Face. You can find the model at the following link:
 
-**[Baijia_Lite Adapter on Hugging Face](https://huggingface.co/datasets/Jiazhengg/BaiJia_Demo/tree/main)**
+**[Baijia_Lite Adapter on Hugging Face](https://huggingface.co/datasets/Jiazhengg/Baijia_Lite/tree/main)**
 
 ### Evaluation Results After Fine-Tuning
 
-After using Demo_Baijia data for SFT, the adapter's performance was evaluated based on the six key dimensions. The table below shows the scores of the base model (Qwen) and the fine-tuned model (BaiJia_Demo), along with the percentage improvement:
+After using Demo_Baijia data for SFT, the adapter's performance was evaluated based on the six key dimensions. The table below shows the scores of the base model (Qwen) and the fine-tuned model (Baijia_Lite), along with the percentage improvement:
 
 | Dimension | Qwen Score | Baijia_Lite Score | Improvement (%) |
 |-----------|------------|-------------------|-----------------|
@@ -50,7 +50,7 @@ After using Demo_Baijia data for SFT, the adapter's performance was evaluated ba
 | **CR**    | 3.94       | 4.04              | **2.53%**       |
 | **CHA**   | 4.39       | 4.48              | **2.05%**       |
 
-These results demonstrate the improved ability of the BaiJia_Demo fine-tuned adapter in all dimensions, with notable gains in **Character Consistency (CC)** and **Character Appeal (CA)**.
+These results demonstrate the improved ability of the Baijia_Lite fine-tuned adapter in all dimensions, with notable gains in **Character Consistency (CC)** and **Character Appeal (CA)**.
 
 ## Usage Instructions
 
